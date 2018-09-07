@@ -1,0 +1,31 @@
+{
+  "name": "core",
+  "version": "0.0.0",
+  "description": "Core / low level library for Speedshield projects",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "esw  ./src/**/*.js ",
+    "lint:watch": "npm run lint  -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpeedshieldTechnologies/core.git"
+  },
+  "keywords": [
+    "speedshield",
+    "core",
+    "low level"
+  ],
+  "author": "Herjend Teny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpeedshieldTechnologies/core/issues"
+  },
+  "homepage": "https://github.com/SpeedshieldTechnologies/core#readme",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-watch": "^4.0.2",
+    "npm-run-all": "^4.1.3"
+  }
+}
