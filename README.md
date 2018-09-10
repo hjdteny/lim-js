@@ -8,11 +8,13 @@ The list of problems:
 * Extending module.require to be able to load .yaml file
   This nice extension will shorten the code for reading the YAML file
 * Introduce standardised custom message format to be used in inter-communication between streaming object
-* Introduce some characterisitc when defining class,e.g:
+* Introduce some characteristics when defining class,e.g:
   - Traceable: child class should be traceable by parent class
 * Extending necessary third party libraries to allow extended feature
   - jspack: add bitarray and enumareated data type
-* Better error logging system that gives more meaningful stackTrac for debugging purpose
+* Better error logging system that gives more meaningful stack trace for debugging purpose
+* Extend native Objec modules.
+  - Merging 2 json and create new copy
 
 The list goes on. It will get longer and properly documented as more works are added in.
 
