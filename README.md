@@ -12,6 +12,8 @@ The list of problems:
   - Traceable: child class should be traceable by parent class
 * Extending necessary third party libraries to allow extended feature
   - jspack: add bitarray and enumareated data type
+  - object-hash: add functionality to filter keys with undefined/falsy value (e.g: undefined, empty string, null)
+* Introduce a Validator model, that allows validation of an object/parameters with standardised response
 * Better error logging system that gives more meaningful stack trace for debugging purpose
 * Extend native Object modules.
   - Merging 2 json and create new copy
