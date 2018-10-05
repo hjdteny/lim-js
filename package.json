@@ -33,5 +33,6 @@
   "dependencies": {
     "hjson": "^3.1.1",
     "yamljs": "^0.3.0"
-  }
+  },
+  "precommit": "npm-run-all --serial lint test"
 }
