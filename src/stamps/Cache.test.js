@@ -2,7 +2,7 @@
 const expect = require('chai').expect;
 const {expectStrictStamp} = require('./testHelper');
 
-describe.only('Cache Stamp ', () => {
+describe('Cache Stamp ', () => {
   const {Cache} = require('./index');
 
   it('is a Stamp', () => {
