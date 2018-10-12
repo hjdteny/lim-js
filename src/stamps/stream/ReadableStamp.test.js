@@ -1,9 +1,10 @@
 /* eslint-disable no-console */
 const expect = require('chai').expect;
+const stampit = require('@stamp/it');
 const _ = require('lodash');
 const {expectStrictStamp} = require('../testHelper');
 
-describe('ReadableStamp ', () => {
+describe.only('ReadableStamp ', () => {
   const {ReadableStamp} = require('./index');
   const {Readable} = require('stream') || require('readable-stream');
 
@@ -147,7 +148,46 @@ describe('ReadableStamp ', () => {
       })
 
     });
-  })
+  });
+
+  // composition test
+  describe('when composed with other Stamp ', () => {
+    var File = stampit()
+      .props({fileName: null})
+      .init( (fileName) => this.fileName = fileName );
+
+    function doCompose() {
+      return ReadableStamp.compose(File);
+    }
+
+    it('do not throw error', () => {
+
+      expect(doCompose).to.not.throw(Error);
+    });
+
+    it('do not throw error when inited', () => {
+      function doTry() {
+        var Stamp = doCompose()
+        Stamp({ fileName: 'test.txt' });
+      }
+
+      expect(doTry).to.not.throw(Error);
+    });
+
+    it('return correct instance when inited', () => {
+      var testInst = doCompose()({ fileName: 'test.txt' });
+
+      expect(testInst).to.haveOwnProperty('fileName');
+      expect(testInst.fileName).to.equal('test.txt');
+      // TODO - check for ReadableStream properties
+    });
+
+    it('when inited, can still act as proper stream', () => {
+      //var testInst = doCompose()({ fileName: 'test.txt' });
+      // TODO
+    });
+
+  });
 
 
 }) // end of MAIN describe
