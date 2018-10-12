@@ -2,9 +2,9 @@
 const {expect} = require('chai');
 const {expectStrictStamp} = require('./testHelper');
 
-describe.only('Stamp ', () =>{
+describe('Stamp ', () =>{
   describe('Traceable ', () => {
-    const {Traceable} = require('./index');
+    const {Traceable} = require('.');
     const basicProperties = ['registerAsChild', 'getAllChilds', '_childs'];
 
     //private helper
