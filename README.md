@@ -17,6 +17,8 @@ The list of problems:
   - jspack: add bitarray and enumareated data type
   - object-hash: add functionality to filter keys with undefined/falsy value (e.g: undefined, empty string, null)
 * Introduce a Validator model, that allows validation of an object/parameters with standardised response
+* Introduce generic data converter with compatiblity with C ,Javascript and SQL data type
+* Add basic service Stamp that can be populated, modularised and configurable during runtime
 * Better error logging system that gives more meaningful stack trace for debugging purpose
 * Extend native Object modules.
   - Merging 2 json and create new copy
