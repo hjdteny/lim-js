@@ -10,31 +10,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SpeedshieldTechnologies/core.git"
+    "url": "git+https://github.com/hjdteny/lim-js.git"
   },
   "keywords": [
-    "speedshield",
-    "core",
-    "low level"
+    "less-is-more",
+    "lim-js",
+    "stamp"
   ],
   "author": "Herjend Teny",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SpeedshieldTechnologies/core/issues"
+    "url": "https://github.com/hjdteny/lim-js/issues"
   },
-  "homepage": "https://github.com/SpeedshieldTechnologies/core#readme",
+  "homepage": "https://github.com/hjdteny/lim-js#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^5.5.0",
     "eslint-watch": "^4.0.2",
-    "jsdoc": "^3.5.5",
+    "jsdoc": "^3.6.3",
     "mocha": "^5.2.0",
     "npm-run-all": "^4.1.3"
   },
   "dependencies": {
     "@stamp/it": "^1.1.0",
     "hjson": "^3.1.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "readable-stream": "^3.0.6",
     "yamljs": "^0.3.0"
   },
