@@ -8,8 +8,8 @@
   },
   "engineStrict": true,
   "scripts": {
-    "lint": "esw ./src/**/*.js ",
-    "lint:watch": "npm run lint  -- --watch",
+    "compile": "esw ./src/**/*.js ",
+    "compile:watch": "npm run compile  -- --watch",
     "test": "node ./node_modules/mocha/bin/mocha src/**/*.test.js --reporter spec"
   },
   "repository": {
@@ -42,9 +42,9 @@
     "lodash": "^4.17.21"
   },
   "dependencies": {
-    "@stamp/it": "^1.1.0",
     "hjson": "^3.1.1",
     "readable-stream": "^3.0.6",
+    "stampit": "^4.3.2",
     "yamljs": "^0.3.0"
   },
   "precommit": "npm-run-all --serial lint test"
