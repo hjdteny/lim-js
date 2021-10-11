@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const stampit = require('@stamp/it');
+const stampit = require('stampit');
 
 function objEntries2Object(entries) {
   entries = (entries && entries.reduce instanceof Function) ? entries : [];

@@ -1,4 +1,4 @@
-const stampit = require('@stamp/it');
+const stampit = require('stampit');
 const {Cache} = require('./index');
 
 function registerAsChild(name) {

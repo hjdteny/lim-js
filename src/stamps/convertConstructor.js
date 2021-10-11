@@ -1,5 +1,5 @@
 
-const stampit = require('@stamp/it');
+const stampit = require('stampit');
 const assign = Object.assign;
 
 /**

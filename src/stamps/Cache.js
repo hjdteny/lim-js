@@ -1,4 +1,4 @@
-const stampit = require('@stamp/it');
+const stampit = require('stampit');
 
 var CacheFactory = ({name, cache}) => {
   let statics = {};
